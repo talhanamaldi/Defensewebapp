@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BEND | Turkish Armed Force Online News</title>
+  <link rel="icon" href="image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="land.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo">
+      <h1> BEND | Turkish Armed Force Online News </h1>
+    </div>
+    <div class="buttons">
+      <form action="/vehiclecat" method="post" style="display: inline;">
+        <button> Vehicles </button>
+      </form>
+      <form action="/vehicleweapon" method="post" style="display: inline;">
+        <button> Weapons </button>
+      </form>
+      <form action="/post" method="post" style="display: inline;">
+        <button> Blog </button>
+      </form>
+      <button> Others </button>
+    </div>
+  </header>
+    <div class="heading-card">
+      <div class="heading-card-highlight">
+        <h2 class="heading"> Highlights: </h2>
+      </div>
+      <div class="heading-card-head">
+      <h2 class="heading"> Supply of simulators for Leopard 2 tanks to Ukraine </h2>
+      </div>
+    </div>
+    <div class="profile-image">
+      <img src="image/aircrafts.jpg" alt="Profile Image">
+    </div>
+    <div class="heading-cards">
+      <h2 class="heading">Aircrafts</h2>
+    </div>
+    <div class="card-container">
+    <form action="/product" method="post">
+
+    <div class="card-row">
+      <div class="card mb-3">
+        <button type="submit" class="buttonImg" name="vehicleType" value="HÜRJET"> <img src="landVehicle.png" alt="land vehicle image" />HÜRJET</button>
+      </div>
+      <div class="card mb-3">
+        <button type="submit" class="buttonImg" name="vehicleType" value="HÜRKUŞ"> <img src="landVehicle.png" alt="land vehicle image" />HÜRKUŞ</button>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card mb-3">
+        <button type="submit" class="buttonImg" name="vehicleType" value="KARAYEL"><img src="landVehicle.png" alt="land vehicle image" />KARAYEL</button>
+      </div>
+      <div class="card mb-3">
+        <button type="submit" class="buttonImg" name="vehicleType" value="ŞIMŞEK"> <img src="landVehicle.png" alt="land vehicle image" />ŞIMŞEK</button>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card mb-3">
+        <button type="submit" class="buttonImg" name="vehicleType" value="T-129 ATAK"><img src="landVehicle.png" alt="land vehicle image" />T-129 ATAK</button>
+      </div>
+      <div class="card mb-3">
+          <button type="submit" class="buttonImg" name="vehicleType" value=""><img src="landVehicle.png" alt="land vehicle image" /></button>
+      </div>
+    </div>
+
+  </form>
+  </div>
+
+  <script>
+    function handleCardClick(cardNumber) {
+      // Handle the click event for each card
+      console.log("Clicked on card: " + cardNumber);
+      // Add your desired functionality here
+    }
+  </script>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="image/logo.png" alt="footer-logo">
+    <h3>BEND | Turkish Armed Force Online News</h3>
+  </div>
+
+  <div class="about-section">
+    <h3>About Us</h3>
+    <p>"It is a platform dedicated to providing information and news tracking services on defense industry and
+      military issues to security forces personnel, defense industry institutions and organizations, researchers,
+      and amateur followers. BEND is an active defense platform with IOS and Android applications and social media
+      accounts.".</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Blog</a>
+    </div>
+  </div>
+</footer>
+<div class="endpage">
+</div>
+</body>
+</html>

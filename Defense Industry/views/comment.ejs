@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BEND | Turkish Armed Force Online News</title>
+  <link rel="icon" href="image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="comment.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo">
+      <h1> BEND | Turkish Armed Force Online News </h1>
+    </div>
+    <div class="buttons">
+      <form action="/vehiclecat" method="post" style="display: inline;">
+        <button> Vehicles </button>
+      </form>
+      <form action="/vehicleweapon" method="post" style="display: inline;">
+        <button> Weapons </button>
+      </form>
+      <form action="/post" method="post" style="display: inline;">
+        <button> Blog </button>
+      </form>
+      <button> Others </button>
+    </div>
+  </header>
+<body>
+  <div class="container">
+    <div class="heading-card">
+      <h2>My Comments</h2>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Comment</th>
+    </tr>
+    <% data.forEach(function(row) { %>
+      <tr>
+        <td><%= row.CommentAboutVehicle %></td>
+      </tr>
+    <% }); %>
+  </table>
+
+<footer class="footer">
+    <div class="footer-logo">
+      <img src="image/logo.png" alt="footer-logo">
+      <h3>BEND | Turkish Armed Force Online News</h3>
+    </div>
+
+    <div class="about-section">
+      <h3>About Us</h3>
+      <p>"It is a platform dedicated to providing information and news tracking services on defense industry and
+        military issues to security forces personnel, defense industry institutions and organizations, researchers,
+        and amateur followers. BEND is an active defense platform with IOS and Android applications and social media
+        accounts.".</p>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+  </footer>
+  <div class="endpage">
+  </div>
+</body>
+</html>

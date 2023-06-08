@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weapon Range</title>
+</head>
+<body>
+  <h1>Weapon Range</h1>
+  <table>
+    <tr>
+      <th>Weapon Name</th>
+      <th>Weapon Range</th>
+      <th>Range Text</th>
+    </tr>
+    <% data.forEach(function(row) { %>
+      <tr>
+        <td><%= row.WNameID %></td>
+        <td><%= row.WRange %></td>
+        <td><%= row.RangeText %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>

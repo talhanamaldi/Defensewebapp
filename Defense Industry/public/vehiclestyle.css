@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(107, 110, 109);
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "side content content content"
+    "content2 content2 content2 content2";
+    grid-template-rows:
+    [side] 250px;
+}
+
+.name {
+    grid-area: content;
+    background-color: rgb(55, 54, 54);
+}
+
+.property {
+    position: fixed;
+    top: 270px;
+    width: 1263px;
+    height: 150px;
+    grid-area: content2;
+    background-color: rgb(55, 54, 54);
+}
+
+.comment {
+    position: fixed;
+    top: 430px;
+    width: 1263px;
+    height: 170px;
+    background-color: rgb(210, 209, 209);
+}
+
+tr[class="tableRow3"] th {
+    color: white;
+    padding: 15px 510px 0 510px;
+}
+
+tr[class="tableCol3"] td {
+    color: rgb(21, 21, 21);
+    padding: 20px 400px 0 400px;
+}
+
+
+img {
+    position: fixed;
+    width: 316px;
+    height: 250px;
+}
+
+aside {
+    grid-area: side;
+    background-color: rgb(101, 105, 104);
+}
+
+.first{
+    color: white;
+    position: fixed;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 200%;
+}
+
+.second {
+    border-collapse: collapse;
+}
+
+tr[class="tableRow2"] {
+    border-bottom: 2pt solid rgb(45, 43, 43);
+}
+
+tr[class="tableRow2"] th {
+    color: white;
+    padding: 15px 55px 0 55px;
+}
+
+tr[class="tableCol2"] td {
+    color: white;
+    padding: 15px 55px 0 55px;
+}

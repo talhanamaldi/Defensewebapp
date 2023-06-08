@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BEND | Turkish Armed Force Online News</title>
+  <link rel="icon" href="image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="product.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo">
+          <h1> BEND | Turkish Armed Force Online News </h1>
+        </div>
+        <div class="buttons">
+          <form action="/vehiclecat" method="post" style="display: inline;">
+            <button> Vehicles </button>
+          </form>
+          <form action="/vehicleweapon" method="post" style="display: inline;">
+            <button> Weapons </button>
+          </form>
+          <form action="/post" method="post" style="display: inline;">
+            <button> Blog </button>
+          </form>
+          <button> Others </button>
+        </div>
+      </header>
+      <div class="heading-card">
+        <div class="heading-card-highlight">
+          <h2 class="heading"> Highlights: </h2>
+        </div>
+        <div class="heading-card-head">
+        <h2 class="heading"> Supply of simulators for Leopard 2 tanks to Ukraine </h2>
+        </div>
+      </div>
+    <main>
+        <article class="name">
+            <img src="image/vehicle.png" alt="vehicle image">
+            <table class="first">
+                <tr>
+                    <th><%= title %></th>
+                </tr>
+            </table>
+        </article>
+        <article class="property">
+            <table class="second">
+                <tr class="tableRow2">
+                    <th>Engine</th>
+                    <th>Weight</th>
+                    <th>Armour</th>
+                    <th>Crew Capacity</th>
+                    <th>Company</th>
+                </tr>
+                <% data.forEach(function(row) { %>
+                <tr class="tableCol2">
+                  <td><%= row.vehicleEngine %></td>
+                  <td><%= row.vehicleWeight %></td>
+                  <td><%= row.vehicleArmour %></td>
+                  <td><%= row.vehicleCrewCapasity %></td>
+                  <td><%= row.NCompany %></td>
+                </tr>
+                <% }); %>
+            </table>
+        </article>
+        <article class="makeComment">
+            <textarea name="textarea" id="textarea" cols="50" rows="10" placeholder="Comment your thoughts here..."></textarea>
+            <input id="input_button" type="submit" value="Submit">
+        </article>
+        <article class="comment">
+            <table class="third">
+                <tr class="tableRow3">
+                    <th>Comment Title</th>
+                </tr>
+                <tr class="tableCol3">
+                    <td>
+                        "Testimonials are a great way to share positive feedback you have received and
+                        encourage others to work with you. Add your own here."
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+          <img src="image/logo.png" alt="footer-logo">
+          <h3>BEND | Turkish Armed Force Online News</h3>
+        </div>
+
+        <div class="about-section">
+          <h3>About Us</h3>
+          <p>"It is a platform dedicated to providing information and news tracking services on defense industry and
+            military issues to security forces personnel, defense industry institutions and organizations, researchers,
+            and amateur followers. BEND is an active defense platform with IOS and Android applications and social media
+            accounts.".</p>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </footer>
+      <div class="endpage">
+</body>
+</html>

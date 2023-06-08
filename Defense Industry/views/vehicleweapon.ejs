@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicle - Weapon</title>
+</head>
+<body>
+  <h1>Vehicle Weapon Data</h1>
+  <table>
+    <tr>
+      <th>Vehicle Name</th>
+      <th>Weapon Name</th>
+    </tr>
+    <% data.forEach(function(row) { %>
+      <tr>
+        <td><%= row.VNameID %></td>
+        <td><%= row.WNameID %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>

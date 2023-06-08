@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .form-container-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .form-container-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .form-container form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container button {
+
+      padding: 10px 10px;
+      width: 120px;
+
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <div class="form-container">
+    <div class="form-container-left" style="
+        padding-left: 100px;
+        padding-top: 100px;">
+      <form action="/viewusers" method="post">
+        <button type="submit">Users</button>
+      </form>
+      <form action="/viewvehicle" method="post">
+        <button type="submit">Vehicle</button>
+      </form>
+      <form action="/viewweapon" method="post">
+        <button type="submit">Weapon</button>
+      </form>
+      <form action="/adminpost" method="post">
+        <button type="submit">UsersPosts</button>
+      </form>
+      <form action="/admincomment" method="post">
+        <button type="submit">Userscomment</button>
+      </form>
+      <form action="/viewcompany" method="post">
+        <button type="submit">companies</button>
+      </form>
+
+
+      <form action="/addprop" method="post">
+        <button type="submit">Add vehcile properties</button>
+      </form>
+
+    </div>
+    <div class="form-container-right" style="
+        padding-right: 100px;
+        padding-top: 100px;">
+      <form action="/deleteusers" method="post">
+        <button type="submit">DeleteUsers</button>
+      </form>
+      <form action="/deletevehicle" method="post">
+        <button type="submit">DeleteVehicle</button>
+      </form>
+      <form action="/deleteweapon" method="post">
+        <button type="submit">DeleteWeapon</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

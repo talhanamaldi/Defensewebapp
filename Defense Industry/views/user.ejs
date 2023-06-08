@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .delete-button {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .delete-button:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <h1>User List</h1>
+  <table>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+    <% data.forEach(function(user) { %>
+      <tr>
+        <td><%= user.userName %></td>
+        <td><%= user.password %></td>
+        <td><%= user.email %></td>
+        <td>
+          <form action="/deletesingleuser" method="post">
+            <input type="hidden" name="userId" value="<%= user.id %>" />
+            <button class="delete-button" type="submit">Delete User</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

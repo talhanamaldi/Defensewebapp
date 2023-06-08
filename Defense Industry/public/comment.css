@@ -1,0 +1,138 @@
+body {
+    text-align: center;
+    background-color: #393d32; /* Set your desired background color */
+  }
+  
+/* Topbar */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#393d32;
+    padding: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .buttons button {
+    margin-left: 10px;
+    background-color: #4f1d0e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: white;
+  }
+    
+    .heading-card {
+        margin: auto;
+        background-color:#d2ae81;
+        padding: 0px;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px #f1f3ee;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 40px;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #f1f3ee;
+        background: #d2ae81;
+    }
+    
+    .card {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f1f3ee;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px #d2ae81;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 80px;
+    }
+    .card-content {
+      flex-grow: 1;
+    }
+
+       /* Footer */
+   .footer {
+    background-color: #f1f3ee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .subscribe-button {
+    background-color: #4f1d0e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: white;
+  }
+  
+  .about-section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #4f1d0e;
+  }
+  
+  .endpage {
+    background-color:#393d32;
+    padding: 40px;
+  }
